@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 11</title>
+	</head>
+
+	<body>
+		<h2>Objeto Math</h2>
+
+		<script>
+			var num = 23.38;
+			var num2 = 81;
+			var b = 5;
+			var e = 3;
+
+			var n1 = Math.ceil(num);
+			document.write(num + " arredondando para cima é " + n1 + "<br />");
+
+			var n2 = Math.floor(num);
+			document.write(num + " arredondando para baixo é " + n2 + "<br />");
+
+			var n3 = Math.round(num);
+			document.write(num + " arredondando é " + n3 + "<br />");
+
+			document.write("A raiz quadrada de " + num2 + " é " + Math.sqrt(num2) + "<br />");
+
+			document.write(b + " elevado a " + e + " é " + Math.pow(b, e) + "<br />");
+
+			var maior = Math.max(17, 26, 42, 70, 83, 3, 23, 38, 68, 79);
+			document.write("O maior valor é " + maior + "<br />");
+
+			var menor = Math.min(17, 26, 42, 70, 83, 3, 23, 38, 68, 79);
+			document.write("O menor valor é " + menor + "<br />");
+
+			ns = Math.random();
+			document.write("Número sorteado entre 0 e 1: " + ns + "<br />");
+
+			ns2 = Math.round(Math.random() * 49 + 1);
+			document.write("Número sorteado entre 1 e 50: " + ns2 + "<br />");
+		</script>
+	</body>
+</html>
