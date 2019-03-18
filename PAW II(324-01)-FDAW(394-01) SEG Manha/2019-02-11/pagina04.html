@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 4</title>
+	</head>
+
+	<body>
+		<h2>Manipulando Formulários</h2>
+
+		<form id="f1" method="post" action="">
+			<p><label for="nome">Nome:</label>
+			<input type="text" id="nome" /></p>
+
+			<p><label for="sobrenome">Sobrenome:</label>
+			<input type="text" id="sobrenome" /></p>
+
+			<p><input type="button" value="Concatenar" onclick="document.getElementById('nc').value = document.getElementById('nome').value + ' ' + document.getElementById('sobrenome').value;" /></p>
+
+			<p><label for="nc">Nome completo:</label>
+			<input type="text" id="nc" /></p>
+
+		</form>
+	</body>
+</html>
