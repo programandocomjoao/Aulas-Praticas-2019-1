@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 16</title>
+	</head>
+
+	<body>
+		<h2>Sorteio Premiado</h2>
+
+		<script>
+			var ns = Math.round(Math.random() * 4 + 1);
+			var nd = window.prompt("Digite um número: ", "");
+			var cont = 1;
+
+			while (ns != nd) {
+				cont++;
+				nd = window.prompt("Você errou! Tente novamente:", "");
+			}
+
+			document.write("Parabéns, você acertou na " + cont + "ª tentativa!");
+		</script>
+		
+	</body>
+</html>

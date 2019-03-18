@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 15</title>
+	</head>
+
+	<body>
+		<h2>Sorteio Premiado</h2>
+
+		<script>
+			var ns = Math.round(Math.random() * 4 + 1);
+			var nd = window.prompt("Digite um número: ", "");
+
+			if (ns == nd) 
+				document.write("Parabéns, você acertou!");
+			else
+				document.write("Você errou! O número sorteado foi " + ns);
+		</script>
+		
+	</body>
+</html>

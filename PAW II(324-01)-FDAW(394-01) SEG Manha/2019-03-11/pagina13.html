@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 13</title>
+	</head>
+
+	<body>
+		<h2>Volume</h2>
+
+		<script>
+			var raio = window.prompt("Digite o raio em mm:", "");
+			var alt = window.prompt("Digite a altura em mm:", "");
+
+			raio /= 10;
+			alt /= 10;
+
+			var vol = Math.PI * Math.pow(raio, 2) * alt;
+
+			document.write("O volume é " + vol + "cm<sup>3</sup>");
+		</script>
+	</body>
+</html>
