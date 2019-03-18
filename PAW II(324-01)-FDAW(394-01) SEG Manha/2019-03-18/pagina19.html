@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 19</title>
+	</head>
+
+	<body>
+		<h2>Objeto Date()</h2>
+
+		<script>
+			var d = new Date();
+
+			var dia = (d.getDate() < 10)? "0" + String(d.getDate()) : String(d.getDate());
+			var mes = (d.getMonth()+1 < 10)? "0" + String(d.getMonth()+1) : String(d.getMonth());
+			var hora = (d.getHours() < 10)? "0" + String(d.getHours()) : String(d.getHours());
+			var min = (d.getMinutes() < 10)? "0" + String(d.getMinutes()) : String(d.getMinutes());
+			var seg = (d.getSeconds() < 10)? "0" + String(d.getSeconds()) : String(d.getSeconds());
+
+			document.write("Olá, hoje é " + dia + "/" + mes + "/" + d.getFullYear() + " e no momento são " + hora + ":" + min + ":" + seg);
+		</script>
+	</body>
+</html>

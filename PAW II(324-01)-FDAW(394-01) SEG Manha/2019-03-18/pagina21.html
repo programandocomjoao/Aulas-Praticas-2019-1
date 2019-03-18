@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 21</title>
+	</head>
+
+	<body>
+		<h2>Objeto String()</h2>
+
+		<script>
+			var pal = window.prompt("Digite uma palavra:","");
+
+			document.write("Palavra digitada: " + pal + "<br />");
+			document.write("Quantidade de caracteres: " + pal.length + "<br />");
+			document.write("Caractere da posição 3: " + pal.charAt(3) + "<br />");
+			document.write("Primeira posição de 'e': " + pal.indexOf('e') + "<br />");
+			document.write("Última posição de 'e': " + pal.lastIndexOf('e') + "<br />");
+			document.write("Trecho entre as posições 4 e 8: " + pal.substring(4, 8) + "<br />");
+			document.write("Em maiúsculas: " + pal.toUpperCase() + "<br />");
+			document.write("Em minúsculas: " + pal.toLowerCase());
+		</script>
+	</body>
+</html>
