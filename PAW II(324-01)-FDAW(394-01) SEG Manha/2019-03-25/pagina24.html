@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 24</title>
+	</head>
+
+	<body>
+		<h2>Manipulação de Vetores</h2>
+
+		<script>
+			var num = new Array(10);
+			var i;
+
+			for (i = 0; i <= 9; i++)
+				num[i] = window.prompt("Digite o " + (i+1) + "º número:", "");
+
+			document.write("Ordem inversa de leitura:<br />");
+			for (i = 9; i >= 0; i--)
+				document.write(num[i] + " - ");
+		</script>
+	</body>
+</html>
