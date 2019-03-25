@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 28</title>
+	</head>
+
+	<body>
+		<h2>Manipulação de Matrizes</h2>
+
+		<table border>
+			<tr>
+				<th>Matrícula</th>
+				<th>Nome</th>
+				<th>Cargo</th>
+			</tr>
+
+		<script>
+			var func = new Array(2);
+			func[0] = new Array(3);
+			func[1] = new Array(3);
+			var i, j;
+
+			for (i = 0; i <= 1; i++) {
+				func[i][0] = window.prompt("Matrícula:", "");
+				func[i][1] = window.prompt("Nome:", "");
+				func[i][2] = window.prompt("Cargo:", "");
+			}
+
+			for (i = 0; i <= 1; i++) {
+				document.write("<tr>");
+
+				for (j = 0; j <= 2; j++)
+					document.write("<td>" + func[i][j] + "</td>");
+
+				document.write("</tr>");
+			}
+		</script>
+
+		</table>
+
+	</body>
+</html>

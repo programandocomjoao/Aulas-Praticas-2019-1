@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 25</title>
+	</head>
+
+	<body>
+		<h2>Manipulação de Vetores</h2>
+
+		<script>
+			var num = new Array(10);
+			var i, soma = 0;
+
+			for (i = 0; i <= 9; i++)
+				num[i] = Number(window.prompt("Digite o " + (i+1) + "º número:", ""));
+
+			for (i = 0; i <= 9; i++)
+				soma += num[i];
+
+			document.write("A soma é " + soma);
+		</script>
+	</body>
+</html>
