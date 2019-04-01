@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 32</title>
+		<script>
+		var c = new Array(0, 0, 0, 0, 0);
+		</script>
+	</head>
+
+	<body>
+		<h2>Selecione os Itens do Produto</h2>
+
+		<form id="frm" method="post" action="mailto:jpvoig@gmail.com">
+			<p>Valor inicial do produto: <span id="preco">100</span></p>
+
+			<fieldset>
+				<legend>Caracteristica 1</legend>
+
+				<input type="radio" name="caract1" id="caract11" value="5" onclick="c[0] = 5; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract11">R$ 5.00</label>
+				<input type="radio" name="caract1" id="caract12" value="10" onclick="c[0] = 10; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract11">R$ 10.00</label>
+				<input type="radio" name="caract1" id="caract13" value="15" onclick="c[0] = 15; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract11">R$ 15.00</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Caracteristica 2</legend>
+
+				<input type="radio" name="caract2" id="caract21" value="2" onclick="c[1] = 2; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract21">R$ 2.00</label>
+				<input type="radio" name="caract2" id="caract22" value="4" onclick="c[1] = 4; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract22">R$ 4.00</label>
+				<input type="radio" name="caract2" id="caract23" value="6" onclick="c[1] = 6; document.getElementById('preco').innerHTML = 100 + c[0] + c[1];" />
+				<label for="caract23">R$ 6.00</label>
+			</fieldset>
+		</form>
+
+	</body>
+</html>
