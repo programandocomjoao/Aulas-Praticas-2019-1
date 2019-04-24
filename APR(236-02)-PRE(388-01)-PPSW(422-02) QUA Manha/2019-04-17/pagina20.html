@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Página 20</title>
+	</head>
+
+	<body>
+		<form id="cadastro" method="post" action="mailto:jpaulobv@unigranrio.edu.br">
+			<fieldset id="usuario">
+				<legend>Identificação do Usuário</legend>
+
+				<p><label for="nome">Nome:</label>
+				<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus />
+				</p>
+
+				<p><label for="senha">Senha:</label>
+				<input type="password" id="senha" size="8" maxlength="8" placeholder="8 dígitos" />
+				</p>
+
+				<p><label for="email">E-mail:</label>
+				<input type="email"id="email" size="30" maxlength="40" />
+				</p>
+
+				<p><label for="telefone">Telefone:</label>
+				<input type="text" id="telefone" size="15" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}" placeholder="(00)00000-0000" />
+				</p>
+
+				<fieldset id="sexo">
+					<legend>Sexo:</legend>
+
+					<input type="radio" id="sexom" name="sexo" value="M" />
+					<label for="sexom">Masculino</label>
+
+					<input type="radio" id="sexof" name="sexo" value="F" />
+					<label for="sexof">Feminino</label>
+				</fieldset>
+
+				<p><label for="data">Data de nascimento:</label>
+				<input type="date" id="data" />	
+				</p>
+
+				<p><label for="hora">Hora do nascimento:</label>
+				<input type="time" id="hora" />
+				</p>
+			</fieldset>
+
+			<fieldset id="endereco">
+				<legend>Endereço do Usuário</legend>
+
+				<p>Logradouro:
+				<input type="text" id="logradouro" size="20" maxlength="80" placeholder="Rua, Av, Trav, Rod, ..." />
+				</p>
+
+				<p>Número:
+				<input type="number" id="numero" min="0" max="99999" />
+				</p>
+
+				<p>Estado:
+				<select id="estado">
+					<optgroup label="Região Sudeste">
+						<option value="ES">Espírito Santo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="SP">São Paulo</option>
+					</optgroup>
+
+					<optgroup label="Região Sul">
+						<option value="PR">Paraná</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+					</optgroup>
+				</select>
+				</p>
+
+				<p>Cidade:
+				<input type="text" id="cidade" size="20" maxlength="40" placeholder="Sua cidade" list="cidades" />
+				</p>
+
+				<datalist id="cidades">
+					<option value="Duque de Caxias"></option>
+					<option value="Nova Iguaçu"></option>
+					<option value="Nilópolis"></option>
+					<option value="Rio de Janeiro"></option>
+					<option value="Niterói"></option>
+					<option value="São Gonçalo"></option>
+					<option value="Rio Bonito"></option>
+					<option value="São João de Meriti"></option>
+					<option value="Rio Claro"></option>
+				</datalist>
+			</fieldset>
+
+			<fieldset>
+				<legend>Mensagem do Usuário</legend>
+
+				<p><label for="urgencia">Grau de Urgência:</label>
+				1 <input type="range" id="urgencia" min="1" max="10" step="2" /> 10
+				</p>
+
+				<p><label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" cols="30" rows="5" placeholder="Digite a sua mensagem aqui"></textarea>
+				</p>
+
+				<p><label for="foto">Foto de perfil:</label>
+				<input type="file" id="Foto" />
+				</p>
+
+				<fieldset id="acesso">
+					<legend>Dispositivos</legend>
+
+					<p>Marque os dispositivos que vai utilizar para acessar a sua conta:</p>
+
+					<input type="checkbox" id="comp" name="dispositivos" value="Computador" />
+					<label for="comp">Computador</label>
+
+					<input type="checkbox" id="tab" name="dispositivos" value="Tablet" />
+					<label for="tab">Tablet</label>
+
+					<input type="checkbox" id="phone" name="dispositivos" value="Smartphone" />
+					<label for="phone">Smartphone</label>
+				</fieldset>
+
+				<p><label for="cor">Cor do fundo da sessão:</label>
+					<input type="color" id="cor" />
+				</p>
+			</fieldset>
+
+			<input type="hidden" id="dataCadastro" value="17/04/2019 - 09:39" />
+		</form>
+	</body>
+</html>
