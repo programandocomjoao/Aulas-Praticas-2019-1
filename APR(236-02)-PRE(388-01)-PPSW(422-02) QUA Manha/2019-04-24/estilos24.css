@@ -1,0 +1,41 @@
+body {
+	font-family: verdana;
+}
+
+p, a {
+	font-size: 11pt;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-decoration: overline;
+	text-align: center;
+}
+
+a {
+	text-transform: lowercase;
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	color: red;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-decoration: underline;
+	text-align: right;
+}
+
+address {
+	font-size: 10pt;
+	text-decoration: line-through;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	text-indent: 12.5mm;
+	line-height: 17pt;
+}

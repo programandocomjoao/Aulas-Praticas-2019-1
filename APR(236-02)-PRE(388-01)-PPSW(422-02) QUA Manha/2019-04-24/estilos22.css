@@ -1,0 +1,27 @@
+body {
+	background-color: silver;
+}
+
+h2 {
+	/* font-family: serif; */
+	/* font-family: sans-serif; */
+	/* font-family: cursive; */
+	/* font-family: monospace; */
+	font-family: fantasy;
+}
+
+p {
+	font-family: verdana;
+	/* font-size: xx-small; */
+	/* font-size: x-small; */
+	/* font-size: small; */
+	/* font-size: medium; */
+	/* font-size: large; */
+	/* font-size: x-large; */
+	/* font-size: xx-large; */
+	/* font-size: 11px; */
+	font-size: 11pt;
+	/* font-size: 11pc; */
+	/* font-size: 11cm; */
+	/* font-size: 11mm; */
+}
