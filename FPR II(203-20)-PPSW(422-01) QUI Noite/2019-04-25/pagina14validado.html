@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Página 14</title>
+	</head>
+
+	<body>
+		<a id="topo"></a>
+		<h1>Cadastro de Usuários</h1>
+
+		<form id="cadastro" method="post" action="mailto:jpvoig@gmail.com">
+			<fieldset>
+				<legend>Identificação do Usuário</legend>
+
+				<p><label for="nome">Nome:</label>
+				<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus />
+				</p>
+
+				<p><label for="senha">Senha:</label>
+				<input type="password" id="senha" size="8" maxlength="8" placeholder="8 dígitos" />
+				</p>
+
+				<p><label for="email">E-mail</label>
+				<input type="email" id="email" size="30" maxlength="40" />
+				</p>
+
+				<p><label for="telefone">Telefone:</label>
+				<input type="text" id="telefone" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}" placeholder="(00)0000-0000" />
+				</p>
+
+				<fieldset>
+					<legend>Sexo:</legend>
+
+					<input type="radio" id="sexof" name="sexo" value="F" />
+					<label for="sexof">Feminino</label>
+
+					<input type="radio" id="sexom" name="sexo" value="M" />
+					<label for="sexom">Masculino</label>
+				</fieldset>				
+
+				<p><label for="data">Data de nascimento:</label>
+				<input type="date" id="data" />
+				</p>
+
+				<p><label for="hora">Hora do nascimento:</label>
+				<input type="time" id="hora" />
+				</p>
+			</fieldset>
+
+			<fieldset id="endereco">
+				<legend>Endereço do Usuário</legend>
+
+				<p><label for="logradouro">Logradouro:</label>
+				<input type="text" id="logradouro" size="30" maxlength="80" placeholder="Rua, Av, Rod, Trav, ..." />
+				</p>
+
+				<p><label for="numero">Número:</label>
+				<input type="number" id="numero" min="1" max="99999" />
+				</p>
+
+				<p><label for="estado">Estado:</label>
+				<select id="estado">
+					<optgroup label="Região Sudeste">
+						<option value="ES">Espírito Santo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="SP">São Paulo</option>
+					</optgroup>
+
+					<optgroup label="Região Sul">
+						<option value="PR">Paraná</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+					</optgroup>
+				</select>	
+				</p>
+
+				<p><label for="cidade">Cidade:</label>
+				<input type="text" id="cidade" size="20" maxlength="40" placeholder="Sua cidade" list="cidades" />
+				</p>
+
+				<datalist id="cidades">
+					<option value="Duque de Caxias"></option>
+					<option value="Nova Iguaçu"></option>
+					<option value="São João de Meriti"></option>
+					<option value="Niteroi"></option>
+					<option value="Rio de Janeiro"></option>
+					<option value="Caxias do Sul"></option>
+					<option value="Rio Bonito"></option>
+					<option value="Nova Hamburgo"></option>
+					<option value="Nilópolis"></option>
+					<option value="Rio Claro"></option>
+				</datalist>
+			</fieldset>
+
+			<fieldset id="msg">
+				<legend>Mensagem do Usuário:</legend>
+
+				<p><label for="urgencia">Grau de urgência:</label>
+				1 <input type="range" id="urgencia" min="1" max="10" step="2" /> 10
+				</p>
+
+				<p><label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" cols="45" rows="7"></textarea>	
+				</p>
+
+				<p><label for="foto">Foto de perfil:</label>
+				<input type="file" id="foto" /> 
+				</p>
+
+				<fieldset id="dispositivos">
+					<legend>Dispositivos</legend>
+
+					<p>Selecione os dispositivos que irá utilizar para acessar a sua conta de usuário:</p>
+
+					<input type="checkbox" id="comp" name="disp" value="Computador">
+					<label for="comp">Computador</label>
+
+					<input type="checkbox" id="tab" name="disp" value="Tablet">
+					<label for="tab">Tablet</label>
+
+					<input type="checkbox" id="phone" name="disp" value="Smartphone">
+					<label for="phone">Smartphone</label>
+				</fieldset>
+
+				<p><label for="cor">Cor do perfil:</label>
+				<input type="color" id="cor" />
+				</p>
+			</fieldset>
+
+			<input type="submit" value="Cadastrar Usuário" />
+			<input type="reset" value="Limpar Campos" />
+			<input type="button" value="Fechar Janela" onclick="window.close();" />
+		</form>
+
+		<hr />
+		<a href="#topo">Voltar ao topo</a>
+	</body>
+</html>
