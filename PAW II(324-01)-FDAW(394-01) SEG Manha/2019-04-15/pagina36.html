@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Página 36</title>
+		<script>
+			function exibirData() {
+				var d = new Date();
+
+				var dia = d.getDate();
+				var mes = d.getMonth() + 1;
+				var ano = d.getFullYear();
+				var hor = d.getHours();
+				var min = d.getMinutes();
+				var seg = d.getSeconds();
+
+				if (dia < 10)
+					dia = "0" + String(dia);
+				if (mes < 10)
+					mes = "0" + String(mes);
+				if (hor < 10)
+					hor = "0" + String(hor);
+				if (min < 10)
+					min = "0" + String(min);
+				if (seg < 10)
+					seg = "0" + String(seg);
+
+				document.getElementById('data').innerHTML = dia + "/" + mes + "/" + ano + " - " + hor + ":" + min + ":" + seg;
+			}
+		</script>
+	</head>
+
+	<body onload="exibirData();">
+		<h2>Objeto Navigator</h2>
+
+		<p>
+		Navegador: <script>document.write(navigator.appName);</script><br />
+		Versão: <script>document.write(navigator.appVersion);</script><br />
+		Idioma: <script>document.write(navigator.language);</script>
+		</p>
+
+		<h2>Objeto Screen</h2>
+
+		<p>
+		Largura da tela: <script>document.write(screen.width);</script>px<br />
+		Altura da tela: <script>document.write(screen.height);</script>px<br />
+		Largura disponível da tela: <script>document.write(screen.availWidth);</script>px<br />
+		Altura disponível da tela: <script>document.write(screen.availHeight);</script>px<br />
+		</p>
+
+		<h2>Temporização</h2>
+		
+		<p id="data"></p>
+		<script>
+			window.setInterval(exibirData, 1000);
+		</script>
+	</body>
+</html>

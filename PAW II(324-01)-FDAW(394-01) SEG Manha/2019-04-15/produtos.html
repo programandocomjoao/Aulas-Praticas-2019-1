@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Produtos</title>
+		<script>
+			function passarProduto() {
+				opener.document.getElementById('produto').value = document.getElementById('produtos').options[document.getElementById('produtos').selectedIndex].value;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h2>Produtos</h2>
+
+		<form id="janProd" method="post" action="">
+			<p><label for="produtos">Produtos</label>
+			<select id="produtos" onclick="passarProduto();" onchange="self.close();">
+				<option value="0">Selecione o Produto</option>
+				<option value="Computador">Computador</option>
+				<option value="Smartphone">Smartphone</option>
+				<option value="Placa Mãe">Placa Mãe</option>
+				<option value="Disco Rígido">Disco Rígido</option>
+				<option value="Memória SSD">Memória SSD</option>
+			</select>
+			</p>
+		</form>
+	</body>
+</html>

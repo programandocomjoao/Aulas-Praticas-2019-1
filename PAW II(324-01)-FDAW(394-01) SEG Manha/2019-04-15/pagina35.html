@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Página 35</title>
+		<script>
+			function abrirJanela() {
+				janela = window.open("produtos.html", "produto", "width=320; height=240; left=100; top=50");
+			}
+		</script>
+	</head>
+
+	<body>
+		<h2>Objeto Window</h2>
+
+		<form id="cadastro" method="post" action="">
+			<p><label for="produto">Produto:</label>
+			<input type="text" id="produto" />
+			</p>
+
+			<p><input type="button" value="Escolher Produto" onclick="abrirJanela()" /></p>
+		</form>
+	</body>
+</html>
