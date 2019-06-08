@@ -1,0 +1,59 @@
+@font-face {
+	src: url('fontes/A_Lolita_Scorned.ttf');
+	font-family: 'sangue';
+}
+
+body {
+	background-color: black;
+	background-image: url('imagens/twd.jpg');
+	/* background-repeat: repeat; */
+	/* background-repeat: repeat-x; */
+	/* background-repeat: repeat-y; */
+	background-repeat: no-repeat;
+	/* background-size: 1020px 700px; */
+	background-size: 100% 100%;
+	/* background-position: 50px 100px; */
+	/* background-position: left top; */
+	/* background-position: center top; */
+	/* background-position: right top; */
+	/* background-position: left center; */
+	background-position: center center;
+	/* background-position: right center; */
+	/* background-position: left bottom; */
+	/* background-position: center bottom; */
+	/* background-position: right bottom; */
+	/* background-attachment: scroll; */
+	background-attachment: fixed;
+	font-family: verdana;
+}
+
+h1 {
+	text-align: center;
+	color: red;
+	font-family: sangue;
+	font-weight: normal;
+	font-size: 30pt;
+}
+
+p {
+	text-align: justify;
+	font-size: 11pt;
+	text-indent: 50px;
+	line-height: 20pt;
+	color: #FFFFFF;
+}
+
+div {
+	background-color: black;
+	filter: alpha(opacity=50);
+	opacity: 0.8;
+	padding: 10px;
+	border: yellow 5px solid;
+	/* border: yellow 5px double; */
+	/* border: yellow 7px ridge; */
+	/* border: yellow 7px groove; */
+	/* border: yellow 7px inset; */
+	/* border: yellow 7px outset; */
+	/* border: yellow 7px dotted; */
+	/* border: yellow 7px dashed; */
+}
