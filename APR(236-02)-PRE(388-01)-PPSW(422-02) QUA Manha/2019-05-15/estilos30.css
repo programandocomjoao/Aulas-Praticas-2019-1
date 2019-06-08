@@ -1,0 +1,48 @@
+body {
+	background-color: #CCCCCC;
+	font-family: verdana;
+}
+
+div#container {
+	background-color: white;
+	/* width: 700px; */
+	width: 90%;
+	padding: 10px;
+	border: black 1px solid;
+	box-shadow: 5px 5px 10px black;
+	/* margin: 20px; */
+	margin: 0 auto;
+}
+
+h2, h3 {
+	font-weight: normal;
+	color: #666666;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 11pt;
+	line-height: 20pt;
+}
+
+blockquote {
+	text-align: right;
+	font-size: 11pt;
+	line-height: 16pt;
+	font-style: italic;
+}
+
+strong, em {
+	font-size: 12pt;
+}
+
+p, blockquote, address, pre {
+	color: #555555;
+}
+
+address {
+	text-align: center;
+	font-size: 10pt;
+	font-style: normal;
+}
