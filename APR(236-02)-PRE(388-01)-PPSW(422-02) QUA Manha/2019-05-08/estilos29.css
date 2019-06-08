@@ -1,0 +1,23 @@
+body {
+	font-family: verdana;
+}
+
+p, th, td {
+	font-size: 11pt;
+}
+
+table {
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-spacing: 0;
+}
+
+th, td {
+	border-bottom: black 1px solid;
+	border-right: black 1px solid;
+	padding: 5px;	
+}
+
+th {
+	background-color: silver;
+}

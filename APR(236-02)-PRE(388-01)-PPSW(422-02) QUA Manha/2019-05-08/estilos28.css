@@ -1,0 +1,31 @@
+body {
+	font-family: verdana;
+}
+
+th, td {
+	font-size: 11pt;
+}
+
+table {
+	border-color: blue;
+	border-width: 3px;
+	/* border-style: solid; */
+	/* border-style: double; */
+	/* border-style: ridge; */
+	/* border-style: groove; */
+	/* border-style: inset; */
+	/* border-style: outset; */
+	/* border-style: dotted; */
+	border-style: dashed;
+}
+
+th {
+	border: red 3px solid;
+}
+
+td {
+	border-left: black 1px solid;
+	border-right: green 4px double;
+	border-top: brown 2px dotted;
+	border-bottom: pink 5px dashed;
+}

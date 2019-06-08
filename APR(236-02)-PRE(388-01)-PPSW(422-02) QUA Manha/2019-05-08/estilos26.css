@@ -1,0 +1,11 @@
+body {
+	font-family: verdana;
+}
+
+p, li, dd {
+	font-size: 11pt;
+}
+
+ul {
+	list-style-image: url("imagens/marcador.jpg");
+}
