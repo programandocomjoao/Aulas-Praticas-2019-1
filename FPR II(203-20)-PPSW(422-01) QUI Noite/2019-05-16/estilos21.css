@@ -1,0 +1,97 @@
+body {
+	background-color: #CCCCCC;
+	font-family: verdana;
+}
+
+div#container {
+	background-color: white;
+	width: 90%;
+	border: black 1px solid;
+	box-shadow: 2px 2px 5px black;
+	margin: 0 auto;
+}
+
+header#cabecalho {
+	background-color: #999999;
+	color: white;
+	text-align: center;
+	height: 150px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+footer#rodape {
+	background-color: #999999;
+	color: white;
+	font-size: 10pt;
+	text-align: center;
+	height: 75px;
+	clear: both;
+
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+address {
+	font-style: normal;
+}
+
+aside#secundario {
+	display: block;
+	width: 150px;
+	float: left;
+	padding: 3px;
+}
+
+section#principal {
+	display: block;
+	width: calc(97% - 150px);
+	float: right;
+	border-left: black 1px solid;
+	padding: 5px;
+}
+
+nav#menu a {
+	text-decoration: none;
+	font-size: 11pt;
+	color: black;
+}
+
+nav#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav#menu ul a {
+	background-color: #CCCCCC;
+	display: block;
+	width: 100%;
+	border: white 1px solid;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+nav#menu ul a:hover {
+	background-color: #333333;
+	color: white;
+}
+
+section#principal p {
+	font-size: 11pt;
+	color: #333333;
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 17pt; 
+}
+
+section#principal h2 {
+	background-color: #DDDDDD;
+	padding: 4px;
+	font-weight: normal;
+	color: #333333;  
+}
