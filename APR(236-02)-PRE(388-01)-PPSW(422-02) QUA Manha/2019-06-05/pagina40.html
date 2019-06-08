@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Página 40</title>
+	</head>
+
+	<body id="corpo">
+		<h1>Manipulação de Elementos HTML</h1>
+
+		<hr>
+		<a href="javascript:void(0);" onclick="document.getElementById('bandeira').src='imagens/alemanha.png'; document.getElementById('bandeira').title='Bandeira da Alemanha'; document.getElementById('largura').value = document.getElementById('bandeira').width; document.getElementById('altura').value = document.getElementById('bandeira').height;">Alemanha</a> |
+
+		<a href="javascript:void(0);" onclick="document.getElementById('bandeira').src='imagens/italia.png'; document.getElementById('bandeira').title='Bandeira da Itália'; document.getElementById('largura').value = document.getElementById('bandeira').width; document.getElementById('altura').value = document.getElementById('bandeira').height;">Itália</a> |
+		<a href="javascript:void(0);" onclick="document.getElementById('bandeira').src='imagens/argentina.png'; document.getElementById('bandeira').title='Bandeira da Argentina'; document.getElementById('largura').value = document.getElementById('bandeira').width; document.getElementById('altura').value = document.getElementById('bandeira').height;">Argentina</a> |
+		<a href="javascript:void(0);" onclick="document.getElementById('bandeira').src='imagens/brasil.png'; document.getElementById('bandeira').title='Bandeira do Brasil'; document.getElementById('largura').value = document.getElementById('bandeira').width; document.getElementById('altura').value = document.getElementById('bandeira').height;">Brasil</a>
+		<hr>
+
+		<img src="imagens/brasil.png" title="Bandeira do Brasil" id="bandeira">
+
+		<hr>
+		<label for="largura">Largura:</label>
+		<input type="text" size="5" id="largura">
+
+		<label for="altura">Altura:</label>
+		<input type="text" size="5" id="altura">
+
+		Cor do fundo: <input type="color" id="cor" onchange="document.getElementById('corpo').style.backgroundColor = this.value;">
+	</body>
+</html>
